@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>扫雷</title>
+<link rel="stylesheet" type="text/css" href="css/saolei.css">
+<script src = "./js/allFunction.js"></script>
+<script src = "./js/saolei.js"></script>
+</head>
+<body>
+       <div id = "mask"></div><!-- 遮罩层 -->
+       <div id = "wrap">
+
+             <div id = "top">      <!-- 头部：计时器，地雷数 -->
+                    <div id = "time">
+                          <span class="number" id="timespan">0</span>
+                    </div>
+                    <div id = "mines">
+                          <span class="number" id="bombnum">0</span>
+                    </div>
+             </div>
+
+             <div id = "gameBox"></div>                                                                        
+
+              <div id = "choose"> <!-- 选择级别区，游戏结束框 -->
+                    <div id = "level">
+                          <p>请选择Game级别:</p>
+                          <input type = "radio" name = "choice" class ="block"/>初级：10个雷 10X10风格<br/>
+                          <input type = "radio" name = "choice" class ="block"/>中级：40个雷 20X20风格<br/>
+                          <input type = "radio" name = "choice" class ="block"/>高级：90个雷 30X30风格<br/>
+                          <input type = "button" value = "确 定" id = "confirm"/>
+                          <!-- <input type = "button" value = "取 消" id = "cancel"/> -->
+         	          </div>                                                                                                       
+                    <div id = "over">
+                          <p>Game Over!<br/>很遗憾未能得到松果!<!-- You Win!<br/>恭喜您得到一枚松果! --></p>
+                          用时:<span></span>
+                          <input type = "button" value = "退 出"/>
+                          <input type = "button" value = "重新开始"/>
+                    </div>    
+              </div>
+
+             <div id = "load">  <!-- 加载条 -->
+                    <div></div>
+                    <p>0%</p>
+             </div>
+       </div>
+</body>
+</html>
