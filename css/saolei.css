@@ -218,6 +218,6 @@ body {
 }
 
 #gameBox .open {
-	background: blue;
+	background: #ececec;
 	text-indent: 0;
 }

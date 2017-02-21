@@ -49,7 +49,7 @@ window.onload = function(){
 		aInput[i].onclick = function(){
 
 			oLineNum = (this.index+1)*10;
-			console.log(oLineNum)
+			// console.log(oLineNum)
 		}
 	};
 	aInput[3].onclick = function(){
@@ -132,8 +132,8 @@ window.onload = function(){
 				}
 				if( !!aDiv[newArr[j]].notbomb && !aDiv[newArr[j]].clickonOff  ){
 					var abc= lines;
-					console.log(abc)
-					bian(newArr[j],abc)
+					// console.log(abc)
+					bian(newArr[j],abc);
 				}
 			};
 		}
